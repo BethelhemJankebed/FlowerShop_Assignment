@@ -186,3 +186,167 @@ body {
   height: 310px;
   padding-bottom: 5px;
 }
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background: #8000ff;
+  padding: 10px 0;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar li {
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* New Arrivals */
+.new-arrivals {
+  text-align: center;
+  padding: 40px 20px;
+}
+.new-arrivals .subtitle {
+  color: #555;
+}
+.new-arrivals h2 {
+  font-size: 28px;
+}
+.new-arrivals .purple {
+  color: #8000ff;
+}
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 220px;
+  position: relative;
+}
+.product-card .badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff69b4;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+}
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.product-card h3 {
+  margin: 10px 0 5px;
+}
+.price {
+  color: #8000ff;
+  font-weight: bold;
+}
+.old {
+  text-decoration: line-through;
+  color: #aaa;
+  margin-left: 5px;
+}
+
+/* Weekly Deals */
+.weekly-deals {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #8000ff;
+  color: #fff;
+  border-radius: 25px;
+  margin: 40px auto;
+  padding: 40px;
+  max-width: 1100px;
+}
+.weekly-deals .purple {
+  color: #ff69b4;
+}
+.weekly-deals button {
+  background: pink;
+  color: #8000ff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.weekly-deals img {
+  width: 200px;
+  border-radius: 15px;
+}
+
+/* Deals */
+.deals {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+.deals-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.deals-header .purple {
+  color: #8000ff;
+}
+.deals-header .best-seller {
+  font-weight: 600;
+}
+.right-text {
+  max-width: 400px;
+  font-size: 14px;
+  color: #555;
+}
+.deals-layout {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+.woman {
+  position: relative;
+}
+.woman img {
+  width: 300px;
+  height: 800px;
+  border-radius: 15px;
+}
+.discount-banner {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(255,255,255,0.9);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.deals-products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  flex: 1;
+}
+
