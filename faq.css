@@ -174,18 +174,20 @@ header span {
 
 .newsletter-content p {
   color: #666;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1rem;
 }
 
 .newsletter-form {
   display: flex;
-  min-width: 300px;
+  width: 600px;
   padding: 2rem;
   border-radius: 10px;
+  gap: 1.2rem;
 }
 
 .form-group {
   margin-bottom: 1.5rem;
+  flex: 3;
 }
 
 .form-group label {
@@ -197,10 +199,9 @@ header span {
 
 .form-group input {
   width: 100%;
-  padding: 0.8rem 1rem;
+  padding: 0.8rem 1.2rem;
   border: 1px solid #ddd;
-  border-radius: 6px;
-  font-family: "Poppins", sans-serif;
+  border-radius: 30px;
   font-size: 1rem;
 }
 
@@ -211,20 +212,16 @@ header span {
 
 .subscribe-btn {
   background: #7b2cbf;
+  flex: 1;
   color: white;
   border: none;
-  padding: 0.8rem 2rem;
-  border-radius: 6px;
-  font-family: "Poppins", sans-serif;
+  padding: 0.8rem 1.2rem;
+  border-radius: 30px;
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
-  transition: background 0.3s ease;
-  width: 100%;
-}
-
-.subscribe-btn:hover {
-  background: #6a1cb0;
+  width: auto;
+  height: 100%;
 }
 
 /* Features Section */
@@ -264,24 +261,37 @@ header span {
 
 /* Footer */
 footer {
-  background: #f9f9f9;
-  padding: 3rem 1rem 1rem;
-  border-top: 1px solid #eee;
+  background: #7b2cbf;
+  margin: 18px;
+  border-radius: 18px;
+  color: white;
 }
 
 .footer-content {
   max-width: 1200px;
+  padding: 40px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
+  gap: 1.3rem;
   margin-bottom: 2rem;
 }
-
-.footer-column h4 {
-  font-size: 1.1rem;
+.footer-title {
+  font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: #333;
+  margin-right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.footer-social {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.footer-social a {
+  font-size: 1.5rem;
 }
 
 .footer-column ul {
@@ -294,18 +304,13 @@ footer {
 
 .footer-column ul li a {
   text-decoration: none;
-  color: #666;
-  transition: color 0.3s ease;
-}
-
-.footer-column ul li a:hover {
-  color: #7b2cbf;
+  color: white;
 }
 
 .footer-bottom {
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 1.5rem;
+  padding: 40px;
   border-top: 1px solid #eee;
   display: flex;
   justify-content: space-between;
@@ -315,14 +320,12 @@ footer {
 }
 
 .copyright {
-  color: #666;
   font-size: 0.9rem;
 }
 
 .language-currency {
   display: flex;
   gap: 1rem;
-  color: #666;
   font-size: 0.9rem;
 }
 
