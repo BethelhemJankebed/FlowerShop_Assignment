@@ -1,122 +1,249 @@
 <!DOCTYPE html>
-<html lang="en"></html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="section2.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Flower Shop </title>
-</head>
-<body>
-  <section class="main-wrapper">
-   <div class="container"> 
-        <!-- Left side section-->
-         <img class="mian-img" src="https://st3.depositphotos.com/1177973/13142/i/450/depositphotos_131423498-stock-photo-pretty-girl-holding-big-bouquet.jpg">
-    <!-- Right side section-->
-    <div class="Right-side">
-        <h3> About us</h3>
-        <h1 style="color: blueviolet;">Deliering Nature's</h1>
-        <h1>Beauty to Your Door</h1>
-        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate numquam, voluptatibus, architecto perferendis incidunt neque id ipsa ea modi inventore rem. Veritatis nam obcaecati ut possimus porro, veniam corporis! Aut. </p>
-    </div>
-
-        <!-- bottom cards -->
-         <div class="main-bottom-card-container">
-          <div>
-            <h2> 500+</h2>
-            <p> Happy Customers</p>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flower Shop - Nature's Beauty</title>
+    <link rel="stylesheet" href="section2.css" />
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <!-- Left side with image -->
+          <div class="hero-image">
+            <div class="circle-image">
+              <img
+                src="https://st3.depositphotos.com/1177973/13142/i/450/depositphotos_131423498-stock-photo-pretty-girl-holding-big-bouquet.jpg"
+                alt="Woman with flowers"
+              />
+              <div class="play-button">▶</div>
+            </div>
+            <div class="flower-decoration">🌸</div>
           </div>
-          <div>
-            <h2> 500+</h2>
-            <p> Happy Customers</p>
-          </div>
-          <div>
-            <h2> 500+</h2>
-            <p> Happy Customers</p>
-          </div>
-         </div>
-         <p id="signature">Jenny Alexander</p>
-     </div>
-  </section>
-  
 
+          <!-- Right side with text -->
+          <div class="hero-text">
+            <p class="about-label">About Us</p>
+            <h1 class="hero-title">Delivering Nature's Beauty to Your Door</h1>
+            <p class="hero-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore.
+            </p>
 
-<
-<section ion class="main-wrapper-two">
-    <div class="container"> 
-      <h4>Our products</h4>
-      <div class="product-text">
-        <h2> Our <span id="top-text">Top Seller Products</span></h2>
-        <class="product-button">
-          <p>Veiw all product</p>
-          <i class="fa-solid fa-arrow-right"></i>
+            <!-- Stats Box -->
+            <div class="stats-box">
+              <div class="stat">
+                <h3>20+</h3>
+                <p>Categories</p>
+              </div>
+              <div class="stat">
+                <h3>1000+</h3>
+                <p>Products</p>
+              </div>
+              <div class="stat">
+                <h3>99%</h3>
+                <p>Satisfied Customer</p>
+              </div>
+            </div>
+
+            <p class="signature">Jenny Alexander</p>
+          </div>
         </div>
       </div>
+    </section>
 
-      
-      <section class="main-wrapper-two">
-      <div class="img-container">
-          <p class="badge">20% off</p>
-          <div class="action-button">
-          <i class="fa-regular fa-heart"></i>
-            <i class="fa-solid fa-maximize"></i>
-        <i class="fa-solid fa-bag-shopping"></i>
-          </div>
-        <img src="https://floweronwheels.com/cdn/shop/products/18_400x.jpg?v=1667240783">
-        <!-- bottom cards -->
-         <div class="main-bottom-card-container">
+    <!-- Products Section -->
+    <section class="products">
+      <div class="container">
+        <div class="section-header">
           <div>
-            <h2> 05</h2>
-            <p> Days</p>
+            <p class="section-label">Our Products</p>
+            <h2 class="section-title">
+              Our <span class="purple-text">Top Seller Products</span>
+            </h2>
           </div>
-          <div>
-            <h2> 12</h2>
-            <p> Hours</p>
-          </div>
-          <div>
-            <h2> 30</h2>
-            <p> Mins</p>
-          </div>
-          <div>
-            <h2> 25</h2>
-            <p> Secs</p>
-         </div>
+          <button class="view-all-btn">View All Products</button>
         </div>
-        <h3>Red Rose Bouquet</h3>
-        <p>$29.99</p>
-      </class>
+
+        <!-- Product Cards -->
+        <div class="product-grid">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-badge">50% off</span>
+              <img
+                src="https://floweronwheels.com/cdn/shop/products/18_400x.jpg?v=1667240783"
+                alt="Blue White Bouquets"
+              />
+              <div class="product-icons">
+                <button class="icon-btn">♡</button>
+                <button class="icon-btn">⤢</button>
+                <button class="icon-btn">🛒</button>
+              </div>
+              <!-- Countdown Timer -->
+              <div class="countdown">
+                <div class="time-box">
+                  <span class="time-num">05</span>
+                  <span class="time-label">Days</span>
+                </div>
+                <span class="time-sep">:</span>
+                <div class="time-box">
+                  <span class="time-num">12</span>
+                  <span class="time-label">Hours</span>
+                </div>
+                <span class="time-sep">:</span>
+                <div class="time-box">
+                  <span class="time-num">30</span>
+                  <span class="time-label">Mins</span>
+                </div>
+                <span class="time-sep">:</span>
+                <div class="time-box">
+                  <span class="time-num">25</span>
+                  <span class="time-label">Sec</span>
+                </div>
+              </div>
+            </div>
+            <div class="product-info">
+              <p class="product-category">Bouquets</p>
+              <div class="product-name-rating">
+                <h3 class="product-name">Blue White Bouquets</h3>
+                <div class="rating">⭐ 4.9</div>
+              </div>
+              <div class="product-price">
+                <span class="current-price">$45.00</span>
+                <span class="old-price">$90.00</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-badge pink">20% off</span>
+              <img
+                src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?w=400"
+                alt="Royal Pink Bouquets"
+              />
+            </div>
+            <div class="product-info">
+              <p class="product-category">Bouquets</p>
+              <div class="product-name-rating">
+                <h3 class="product-name">Royal Pink Bouquets</h3>
+                <div class="rating">⭐ 4.9</div>
+              </div>
+              <div class="product-price">
+                <span class="current-price">$48.00</span>
+                <span class="old-price">$60.00</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-badge pink">20% off</span>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1YnlZ0NM-CIwjpeoGBNgM_kixmvvyrZk0dQ&s"
+                alt="Lavenders Bouquets"
+              />
+            </div>
+            <div class="product-info">
+              <p class="product-category">Bouquets</p>
+              <div class="product-name-rating">
+                <h3 class="product-name">Lavenders Bouquets</h3>
+                <div class="rating">⭐ 4.9</div>
+              </div>
+              <div class="product-price">
+                <span class="current-price">$24.00</span>
+                <span class="old-price">$30.00</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-badge green">30% off</span>
+              <img
+                src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=400"
+                alt="Rose Bouquets"
+              />
+            </div>
+            <div class="product-info">
+              <p class="product-category">Bouquets</p>
+              <div class="product-name-rating">
+                <h3 class="product-name">Rose Bouquets</h3>
+                <div class="rating">⭐ 4.9</div>
+              </div>
+              <div class="product-price">
+                <span class="current-price">$35.00</span>
+                <span class="old-price">$50.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-  </div>
-<div class="main-wrapper-two">
-  <div class="img-container">
-  <p class="badge">20% off</p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1YnlZ0NM-CIwjpeoGBNgM_kixmvvyrZk0dQ&s" alt="Bouquets 1">
-    <h5>Bouquets</h5>
-    <p>Royal pink Bouquets</p>
-    <p>$48.00</p>
-  </div>
-</div>
+    </section>
 
-  <div class="img-container">
-          <p class="badge">20% off</p>
-          <div class="action-button">
-          <i class="fa-regular fa-heart"></i>
-            <i class="fa-solid fa-maximize"></i>
-        <i class="fa-solid fa-bag-shopping"></i>
+    <!-- Holiday Sales Section -->
+    <section class="holiday-sales">
+      <div class="container">
+        <div class="holiday-content">
+          <!-- Left Image -->
+          <div class="holiday-image left">
+            <img
+              src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=300"
+              alt="Woman arranging flowers"
+            />
+            <div class="flower-decoration purple">🌸</div>
           </div>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP8WrG_cBo4PIF9zP7USoA-0_YYPTtIP5Pkg&s" alt="Bouquets 1">
-        
 
-        <br>
+          <!-- Center Content -->
+          <div class="holiday-text">
+            <h2 class="holiday-title">
+              <span class="purple-text">Holiday</span> Sales
+            </h2>
+            <p class="holiday-description">Get 50% off - Limited Time Offer!</p>
 
-          <class section class="main-wrapper-two">
-      <div class="img-container">
-          <p class="badge">20% off</p>
-          <div class="action-button">
-          <i class="fa-regular fa-heart"></i>
-            <i class="fa-solid fa-maximize"></i>
-        <i class="fa-solid fa-bag-shopping"></i>
+            <!-- Countdown -->
+            <div class="holiday-countdown">
+              <div class="time-group">
+                <span class="time-number">04</span>
+                <span class="time-text">Days</span>
+              </div>
+              <span class="separator">:</span>
+              <div class="time-group">
+                <span class="time-number">14</span>
+                <span class="time-text">Hours</span>
+              </div>
+              <span class="separator">:</span>
+              <div class="time-group">
+                <span class="time-number">48</span>
+                <span class="time-text">Minutes</span>
+              </div>
+              <span class="separator">:</span>
+              <div class="time-group">
+                <span class="time-number">18</span>
+                <span class="time-text">Seconds</span>
+              </div>
+            </div>
+
+            <button class="shop-now-btn">Shop Now →</button>
           </div>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQojGKdjg_dCsIUe6LwofNl9XtrTxeRxbPZQ4BbM0TPCCRb6BSvRYIdb5eRf3NsHUWKLdA&usqp=CAU" alt="Bouquets 1">
-        <!-- bottom >
+
+          <!-- Right Image -->
+          <div class="holiday-image right">
+            <img
+              src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=300"
+              alt="Woman with flowers"
+            />
+            <div class="flower-decoration purple bottom">🌸</div>
           </div>
+        </div>
+      </div>
+    </section>
+     
+  </body>
+</html>
