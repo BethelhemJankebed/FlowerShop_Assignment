@@ -190,7 +190,7 @@ body {
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Poppins, sans-serif;
   background: #fff;
   color: #333;
 }
@@ -205,7 +205,7 @@ body {
   justify-content: space-evenly;
   gap: 30px;
   list-style: none;
-  margin: 0;
+  margin-bottom: 0;
   padding: 0;
 }
 
@@ -245,12 +245,76 @@ body {
 .new-arrivals .purple {
   color: #8000ff;
 }
+.products1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  align-items: stretch;
+  padding: 0px 0px;
+}
+
+.product-card1 {
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: auto;
+  max-width: 550px;
+  position: relative;
+}
+.product-card1 .badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff69b4;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+}
+.product-card1 img {
+  width: 400px;
+  height: 200px;
+  object-fit:  contain;
+  border-radius: 30px;
+  background-color: #f7f7f7;  
+  padding: 1px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card-content {
+  display: flex;
+  gap: 5px;
+  align-items: flex-start;
+}
+
+.text-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #f7f7f7;
+  padding: 2px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  max-width: 220px;      
+}
+
+.product-card1 {
+  width: 550px;
+}
+
 .products {
   display: flex;
   justify-content: center;
   gap: 300px;
-  margin-top: 30px;
+  margin-top: 300px;
 }
+
+
 .product-card {
   background: #fff;
   border-radius: 12px;
@@ -270,10 +334,10 @@ body {
   border-radius: 20px;
 }
 .product-card img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 12px;
+  width: 300px;
+  height: 200px;
+  object-fit:  contain;
+  border-radius: 20px;
 }
 .product-card h3 {
   margin: 10px 0 5px;
@@ -301,47 +365,81 @@ body {
   background: #8000ff;
   color: #fff;
   border-radius: 25px;
-  margin: 40px auto;
-  padding: 40px;
+  /*margin: 50px auto;*/
+  margin-top: 5px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 30px;
   max-width: 1100px;
+  font-size: 20px;
 }
 .weekly-deals .purple {
-  color: #ff69b4;
+  color: #e060a0;
 }
 .weekly-deals button {
   background: pink;
   color: #8000ff;
+  /*color: rgb(115, 0, 215)*/
   padding: 10px 20px;
   border: none;
   border-radius: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .weekly-deals img {
-  width: 200px;
+  width: 700px;
+  height: 300px;
   border-radius: 15px;
 }
+
+.best-seller {
+  text-align: left;
+  margin-bottom: auto;
+  margin-top: 50px;
+}
+
+.purple {
+  text-align: left;
+  margin-top: auto;
+}
+
 
 /* Deals */
 .deals {
   padding: 40px 20px;
   max-width: 1100px;
   margin: auto;
+  text-align: right;
 }
 .deals-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
 }
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  font-size: 23px;
+  margin-bottom: auto;
+  margin-top: 20px;
+}
+
 .deals-header .purple {
   color: #8000ff;
 }
 .deals-header .best-seller {
-  font-weight: 600;
+  font-weight: 570;
 }
 .right-text {
+  display: flex;
+  flex-direction: column;
   max-width: 400px;
   font-size: 14px;
-  color: #555;
+  color: #7c7b7b;
+  text-align: right;
+  margin-bottom: 30px;
+  margin-top: 150px;
 }
 .deals-layout {
   display: flex;
@@ -352,20 +450,11 @@ body {
   position: relative;
 }
 .woman img {
-  width: 300px;
-  height: 1000px;
+  width: 250px;
+  height: 750px;
   border-radius: 15px;
 }
-.discount-banner {
-  position: absolute;
-  color: white;
-  bottom: 20px;
-  left: 20px;
-  background: rgba(141, 143, 141, 0.9);
-  padding: 10px;
-  border-radius: 10px;
-  text-align: center;
-}
+
 .deals-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -386,4 +475,3 @@ body {
   color: rgb(129, 126, 126);
   font-size: 15px;
 }
-
