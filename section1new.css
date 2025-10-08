@@ -640,6 +640,22 @@ h1 .accent {
 .btn.small {
   margin-top: 50px;
 }
+.payment {
+  position: absolute;
+  top: 30%;
+  left: 90%;
+  padding: 5px 15px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.delivery {
+  position: absolute;
+  bottom: 30%;
+  left: 80%;
+  padding: 5px 15px;
+  border-radius: 10px;
+  background-color: #fff;
+}
 /* layout for card content with media to the right */
 .card-inner {
   display: flex;
