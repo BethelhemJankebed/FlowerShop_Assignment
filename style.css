@@ -197,7 +197,7 @@ body {
 
 /* Navbar */
 .navbar {
-  background: #8000ff;
+  background: #6705a9;
   padding: 10px 0;
 }
 .navbar ul {
@@ -431,6 +431,10 @@ body {
 .deals-header .best-seller {
   font-weight: 570;
 }
+.imee {
+  border-radius: 500px;
+}
+
 .right-text {
   display: flex;
   flex-direction: column;
