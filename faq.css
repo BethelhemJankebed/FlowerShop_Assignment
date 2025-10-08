@@ -107,6 +107,22 @@ header span {
   width: 300px;
   height: fit-content;
 }
+.icon-stack {
+  position: relative;
+  display: inline-block;
+  font-size: 2.5rem;
+}
+.icon-stack i:first-child {
+  position: absolute;
+  top: 16px;
+  left: 14px;
+  color: #fe92f0;
+  transform: scaleX(-1);
+}
+.icon-stack i:last-child {
+  position: relative;
+  color: #fff;
+}
 .faq-contact h3 {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
@@ -154,6 +170,7 @@ header span {
 .newsletter-content {
   flex: 1;
   min-width: 300px;
+  margin-bottom: 0.2rem;
 }
 
 .newsletter-content h3 {
@@ -174,7 +191,6 @@ header span {
 
 .newsletter-content p {
   color: #666;
-  margin-bottom: 1rem;
 }
 
 .newsletter-form {
@@ -183,6 +199,7 @@ header span {
   padding: 2rem;
   border-radius: 10px;
   gap: 1.2rem;
+  margin-top: 0;
 }
 
 .form-group {
@@ -277,13 +294,33 @@ footer {
   margin-bottom: 2rem;
 }
 .footer-title {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
   margin-right: 1rem;
-  display: flex;
   gap: 0.5rem;
 }
+.logo {
+  margin-bottom: 1rem;
+  display: flex;
+  font-size: 1.4rem;
+  gap: 1rem;
+}
+.flower-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #fe92f0;
+  border-radius: 50%;
+  margin-right: 2px;
+}
 
+.flower-icon iconify-icon {
+  color: #7b2cbf;
+  width: 38px;
+  height: 38px;
+}
 .footer-social {
   margin-top: 1rem;
   display: flex;
@@ -293,18 +330,31 @@ footer {
 .footer-social a {
   font-size: 1.5rem;
 }
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
 
 .footer-column ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-column p {
+  font-size: 14px;
+  color: rgb(221, 220, 220);
+  line-height: 1.4;
 }
 
 .footer-column ul li {
+  margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
 .footer-column ul li a {
+  font-size: 14px;
   text-decoration: none;
-  color: white;
+  color: rgb(221, 220, 220);
 }
 
 .footer-bottom {
