@@ -148,10 +148,9 @@ main {
   top: 0;
   bottom: 0;
   width: 100%;
-  z-index: 2;
   border-radius: 0;
   pointer-events: none;
-  /* dark-to-transparent overlay (no bright white) */
+
   background: linear-gradient(
     90deg,
     rgba(0, 0, 0, 0.55) 0%,
@@ -495,8 +494,8 @@ h1 .accent {
 
 /* small visual helper for demo when no bighero.jpg exists */
 .hero-bg img[alt="placeholder"] {
-  opacity: 0.7;
-  filter: saturate(0.95);
+  opacity: 1;
+  filter: saturate(0);
 }
 
 /* make overlay stronger so text is readable */
@@ -522,7 +521,6 @@ h1 .accent {
   background: rgba(255, 255, 255, 0.12);
   color: #fff;
 }
-
 .badge {
   position: absolute;
   padding: 8px 12px;
