@@ -1,0 +1,364 @@
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background: #6705a9;
+  padding: 10px 0;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar ul li img {
+  width: 50px;
+  height: 40px;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
+.navbar li {
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* New Arrivals */
+.new-arrivals {
+  text-align: center;
+  padding: 40px 20px;
+}
+.new-arrivals .subtitle {
+  color: #555;
+}
+.new-arrivals h2 {
+  font-size: 28px;
+}
+.new-arrivals .purple {
+  color: #8000ff;
+}
+.products1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  align-items: stretch;
+  padding: 0px 0px;
+}
+
+.product-card1 {
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: auto;
+  max-width: 340px;
+  position: relative;
+  overflow: hidden;
+}
+.product-card1 .badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff69b4;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+}
+
+.product-card1 img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  background-color: #f7f7f7;
+  padding: 1px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+  display: flex;
+  gap: 5px;
+  align-items: flex-start;
+}
+
+.text-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #f7f7f7;
+  padding: 2px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  max-width: 220px;
+}
+
+.product-card1 {
+  width: 340px;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+  margin-top: 300px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  position: relative;
+}
+.product-card .badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff69b4;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+}
+.product-card img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.product-card h3 {
+  margin: 10px 0 5px;
+}
+.price {
+  color: #8000ff;
+  font-weight: bold;
+}
+.old {
+  text-decoration: line-through;
+  color: #aaa;
+  margin-left: 5px;
+}
+
+.desc {
+  color: rgb(129, 126, 126);
+  font-size: 10px;
+}
+
+/* Weekly Deals */
+.weekly-deals {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #8000ff;
+  color: #fff;
+  border-radius: 25px;
+  /*margin: 50px auto;*/
+  margin-top: 5px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 30px;
+  max-width: 1100px;
+  font-size: 20px;
+}
+.weekly-deals .purple {
+  color: #e060a0;
+}
+.weekly-deals button {
+  background: pink;
+  color: #8000ff;
+  /*color: rgb(115, 0, 215)*/
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+.weekly-deals img {
+  width: 700px;
+  height: 300px;
+  border-radius: 15px;
+}
+
+.best-seller {
+  text-align: left;
+  margin-bottom: auto;
+  margin-top: 50px;
+}
+
+.purple {
+  text-align: left;
+  margin-top: auto;
+}
+
+/* Deals */
+.deals {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+  text-align: right;
+}
+.deals-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  font-size: 23px;
+  margin-bottom: auto;
+  margin-top: 20px;
+}
+
+.deals-header .purple {
+  color: #8000ff;
+}
+.deals-header .best-seller {
+  font-weight: 570;
+}
+.imee {
+  border-radius: 500px;
+}
+
+.right-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  font-size: 14px;
+  color: #7c7b7b;
+  text-align: right;
+  margin-bottom: 30px;
+  margin-top: 150px;
+}
+.deals-layout {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+.woman {
+  position: relative;
+}
+.woman img {
+  width: 250px;
+  height: 750px;
+  border-radius: 15px;
+}
+
+.deals-products,
+.deals-products1 {
+  /* show small product thumbnails in a horizontal row and allow wrapping */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+/* compact thumbnail sizing only inside weekly deals */
+.deals-products .product-card,
+.deals-products1 .product-card {
+  width: 180px;
+  padding: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+.deals-products .product-card img,
+.deals-products1 .product-card img {
+  max-height: 150px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.bouq {
+  color: rgb(129, 126, 126);
+  font-size: 15px;
+}
+
+.bask {
+  color: rgb(129, 126, 126);
+  font-size: 15px;
+}
+
+.flow {
+  color: rgb(129, 126, 126);
+  font-size: 15px;
+}
+
+/* Force 3 cards per row for Deals of the Day (scoped, high-specificity override) */
+section.deals .deals-layout .deals-products,
+section.deals .deals-layout .deals-products1 {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 28px !important;
+  align-items: start !important;
+  justify-items: center !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Ensure each card fills its grid cell and cap visual width so three fit */
+section.deals .deals-layout .deals-products > .product-card,
+section.deals .deals-layout .deals-products1 > .product-card {
+  display: block !important;
+  float: none !important;
+  width: 100% !important;
+  max-width: 340px !important; /* adjust 300-360 if you want tighter/looser cards */
+  margin: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* Prevent inner elements from re-introducing layout constraints */
+section.deals .deals-layout .deals-products > .product-card *,
+section.deals .deals-layout .deals-products1 > .product-card * {
+  box-sizing: border-box !important;
+  max-width: 100% !important;
+}
+
+/* Responsive fallbacks */
+@media (max-width: 1100px) {
+  section.deals .deals-layout .deals-products,
+  section.deals .deals-layout .deals-products1 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+  }
+  section.deals .deals-layout .deals-products > .product-card,
+  section.deals .deals-layout .deals-products1 > .product-card {
+    max-width: none !important;
+  }
+}
+@media (max-width: 640px) {
+  section.deals .deals-layout .deals-products,
+  section.deals .deals-layout .deals-products1 {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    padding: 0 12px !important;
+  }
+}

@@ -1,0 +1,447 @@
+.ikrflobody {
+  background-color: #f6f6f6;
+  font-family: "Poppins", sans-serif;
+}
+
+.firsttext {
+  background: #fff;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 12px 30px rgba(15, 15, 15, 0.06);
+  width: 48%;
+}
+
+.secondtext {
+  background: #fff;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 12px 30px rgba(15, 15, 15, 0.06);
+  width: 48%;
+}
+
+.clientname {
+  margin-right: 13px;
+}
+
+.cli {
+  line-height: 0;
+}
+
+.cli .h4 {
+  font-weight: lighter;
+}
+
+.cli .p {
+  font-size: smaller;
+}
+
+.clientimg {
+  display: flex;
+}
+
+.firstpage {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: stretch !important;
+  gap: 40px !important;
+  margin: 40px auto !important;
+  padding: 0 20px !important;
+  max-width: 1100px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.firstheader {
+  text-align: center;
+}
+
+.img1 {
+  border-radius: 30px;
+}
+
+.secondpage {
+  display: flex;
+  padding-left: 14%;
+  padding-right: 14%;
+  margin-bottom: 50px;
+  margin-right: 70px;
+  margin-right: 70px;
+}
+
+.blogtext {
+  display: flex;
+  padding-left: 15%;
+}
+
+.blogtext2 {
+  padding-left: 30%;
+}
+
+.secondimg {
+  border-radius: 15px;
+}
+
+.secondtext2 {
+  margin: 15px;
+}
+
+.lastpage {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.lastpageimg {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.lastimg {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-radius: 20px;
+}
+
+.imgalone {
+  margin-top: 5px;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.span {
+  color: #6705a2;
+}
+
+.span2 {
+  border: 1px solid #6705a2;
+  background-color: #6705a2;
+  color: white;
+  border-radius: 20px;
+  margin-top: 60px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: small;
+}
+
+.dot {
+  color: #f395d6;
+}
+
+.hr {
+  width: 300px;
+  height: 5px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right,
+    #6705a2 0 60px,
+    transparent 60px 80px,
+    white 80px 140px,
+    transparent 140px 160px,
+    white 160px 220px,
+    transparent 220px 240px,
+    white 240px 300px
+  );
+  margin-bottom: 80px;
+}
+
+.card {
+  position: relative;
+}
+
+.card .label {
+  position: absolute;
+  bottom: 10px;
+  left: 1px;
+  background: #6705a2;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.card2 {
+  position: relative;
+}
+
+.card2 .labels {
+  position: absolute;
+  bottom: 10px;
+  left: 1px;
+  background: #6705a2;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.card2 .cardimg {
+  position: absolute;
+  top: 25%;
+  left: 100px;
+  border-radius: 30px;
+  background-color: #f395d6;
+}
+
+.divider {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #6705a2;
+  color: #ffffff;
+  line-height: 0;
+}
+
+.secondpage .a {
+  font-size: small;
+}
+
+.secondpage .p {
+  font-size: small;
+}
+
+.h4 {
+  font-size: medium;
+  font-weight: lighter;
+}
+
+/* Instagram thumbnails spacing (last images) */
+.lastpageimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px; /* space between the three columns */
+  margin-bottom: 60px;
+}
+
+.imgsec {
+  /* two columns: each child div stacks its images vertically */
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+}
+.imgsec > div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lastimg {
+  margin: 0; /* remove tiny margins that collapse spacing */
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.imgalone {
+  margin: 0 6px; /* small horizontal breathing room */
+  width: 420px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+}
+
+/* Strong override to ensure two centered testimonial cards match the reference */
+.firstpage {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: stretch !important;
+  gap: 40px !important;
+  margin: 40px auto !important;
+  padding: 0 20px !important;
+  max-width: 1100px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Fixed card size and visual style */
+.firsttext,
+.secondtext {
+  width: 520px !important;
+  min-width: 520px !important;
+  max-width: 520px !important;
+  border-radius: 16px !important;
+  padding: 28px 32px !important;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.06) !important;
+  background: #fff !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+}
+
+/* Ensure avatar size and placement match reference */
+.clientimg img,
+.firsttext img,
+.secondtext img {
+  width: 72px !important;
+  height: 72px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+/* Prevent other containers from adding horizontal offset */
+.ikrflobody,
+body,
+html {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Fix: ensure avatar + name/role do not overlap */
+.firstpage .clientimg {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  position: relative !important;
+  margin-top: 18px !important;
+  box-sizing: border-box !important;
+}
+
+/* make avatar fixed size and prevent it from shifting text */
+.firstpage .clientimg img {
+  width: 72px !important;
+  height: 72px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  flex: 0 0 72px !important;
+  display: block !important;
+  margin: 0 !important;
+}
+
+/* stack name and role vertically and prevent overlap/overflow */
+.firstpage .cli {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  gap: 4px !important;
+  min-width: 0 !important; /* prevents overflow pushing into avatar */
+  position: relative !important;
+  margin: 0 !important;
+  line-height: 1.2 !important;
+}
+
+/* name */
+.firstpage .cli .h4 {
+  margin: 0 !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  line-height: 1.2 !important;
+  color: #222 !important;
+  white-space: normal !important;
+  overflow: visible !important;
+}
+
+/* role ("Happy Customer") */
+.firstpage .cli .p {
+  margin: 0 !important;
+  font-size: 13px !important;
+  color: #666 !important;
+  line-height: 1.1 !important;
+}
+
+/* remove any absolute/transform that could cause overlap */
+.firstpage .clientimg *,
+.firstpage .cli * {
+  position: static !important;
+  transform: none !important;
+}
+
+/* Fix: center and place purple indicator under the two cards correctly */
+.firstpage + .hr,
+.firstpage ~ .hr {
+  width: 100% !important;
+  max-width: 760px !important; /* matches centered cards width */
+  height: 36px !important;
+  margin: 28px auto 80px !important;
+  position: relative !important;
+  background: transparent !important;
+  box-sizing: border-box !important;
+}
+
+/* pale track */
+.firstpage + .hr::after,
+.firstpage ~ .hr::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 240px !important;
+  height: 6px !important;
+  background: #f1e6fb !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+}
+
+/* purple active segment centered */
+.firstpage + .hr::before,
+.firstpage ~ .hr::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 60px !important;
+  height: 6px !important;
+  background: #6705a2 !important;
+  border-radius: 6px !important;
+  box-shadow: 0 4px 12px rgba(103, 5, 162, 0.12) !important;
+  z-index: 2 !important;
+}
+
+/* Responsive tweaks */
+@media (max-width: 900px) {
+  .firstpage .clientimg img {
+    width: 60px !important;
+    height: 60px !important;
+    flex: 0 0 60px !important;
+  }
+  .firstpage + .hr,
+  .firstpage ~ .hr {
+    max-width: 520px !important;
+  }
+  .firstpage + .hr::after {
+    width: 180px !important;
+  }
+  .firstpage + .hr::before {
+    width: 48px !important;
+  }
+}
+@media (max-width: 700px) {
+  .firstpage .clientimg {
+    gap: 10px !important;
+  }
+  .firstpage .clientimg img {
+    width: 54px !important;
+    height: 54px !important;
+    flex: 0 0 54px !important;
+  }
+  .firstpage + .hr,
+  .firstpage ~ .hr {
+    max-width: 320px !important;
+    margin-top: 20px !important;
+  }
+  .firstpage + .hr::after {
+    width: 140px !important;
+  }
+  .firstpage + .hr::before {
+    width: 40px !important;
+  }
+}
