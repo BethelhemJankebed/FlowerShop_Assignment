@@ -3,34 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flower Shop</title>
-
-    <link rel="stylesheet" href="style.css" />
+    <title>Main Merge</title>
   </head>
-
   <body>
-    <div id="section-1"></div>
-    <div id="section-2"></div>
-    <div id="section-3"></div>
-    <div id="section-4"></div>
-    <div id="section-5"></div>
+    <div id="section1" class="section"></div>
+    <div id="section2" class="section"></div>
+    <div id="section3" class="section"></div>
 
     <script>
       const sections = [
-        { id: "section-1", file: "section1new.html" },
-        { id: "section-2", file: "sections/section2.html" },
-        { id: "section-3", file: "Section3Senait.html" },
-        { id: "section-4", file: "sections/section4.html" },
-        { id: "section-5", file: "sections/section5.html" },
+        {
+          id: "section1",
+          html: "section1new.html",
+          css: "sections1new.css",
+        },
+        {
+          id: "section2",
+          html: "sections/section2.html",
+          css: "sections/section2.css",
+        },
+        {
+          id: "section3",
+          html: "Section3Senait.html",
+          css: "Section3Senait.css",
+        },
       ];
 
       sections.forEach((sec) => {
-        fetch(sec.file)
+        // Fetch and insert HTML
+        fetch(sec.html)
           .then((res) => res.text())
           .then((html) => {
-            document.querySelector(`#${sec.id}`).innerHTML = html;
+            const container = document.getElementById(sec.id);
+            container.innerHTML = html;
+
+            // Prefix all CSS rules with the section ID to prevent conflicts
+            fetch(sec.css)
+              .then((res) => res.text())
+              .then((css) => {
+                const scopedCss = css.replace(
+                  /(^|\})\s*([^{]+)/g,
+                  (match, brace, selector) => {
+                    // prefix each selector with #sectionID
+                    return `${brace} #${sec.id} ${selector.trim()}`;
+                  }
+                );
+                const style = document.createElement("style");
+                style.textContent = scopedCss;
+                document.head.appendChild(style);
+              })
+              .catch((err) =>
+                console.warn(`CSS not found for ${sec.id}:`, err)
+              );
           })
-          .catch((err) => console.error(`Error loading ${sec.file}:`, err));
+          .catch((err) =>
+            console.error(`Failed to load HTML for ${sec.id}:`, err)
+          );
       });
     </script>
   </body>
