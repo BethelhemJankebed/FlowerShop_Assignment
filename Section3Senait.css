@@ -71,8 +71,9 @@ body {
   padding: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   width: auto;
-  max-width: 550px;
+  max-width: 340px;
   position: relative;
+  overflow: hidden;
 }
 .product-card1 .badge {
   position: absolute;
@@ -84,12 +85,14 @@ body {
   font-size: 12px;
   border-radius: 20px;
 }
+
 .product-card1 img {
   width: 100%;
   max-width: 100%;
   height: auto;
+  max-height: 220px;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 12px;
   background-color: #f7f7f7;
   padding: 1px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -114,7 +117,7 @@ body {
 }
 
 .product-card1 {
-  width: 550px;
+  width: 340px;
 }
 
 .products {
@@ -268,11 +271,31 @@ body {
   border-radius: 15px;
 }
 
-.deals-products {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.deals-products,
+.deals-products1 {
+  /* show small product thumbnails in a horizontal row and allow wrapping */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 20px;
-  flex: 1;
+  align-items: flex-start;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+/* compact thumbnail sizing only inside weekly deals */
+.deals-products .product-card,
+.deals-products1 .product-card {
+  width: 180px;
+  padding: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+.deals-products .product-card img,
+.deals-products1 .product-card img {
+  max-height: 150px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
 }
 .bouq {
   color: rgb(129, 126, 126);

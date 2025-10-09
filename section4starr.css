@@ -1,0 +1,254 @@
+.ikrflobody {
+  background-color: #f6f6f6;
+  font-family: "Poppins", sans-serif;
+}
+
+.firsttext {
+  background: #fff;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 12px 30px rgba(15, 15, 15, 0.06);
+  width: 48%;
+}
+
+.secondtext {
+  background: #fff;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 12px 30px rgba(15, 15, 15, 0.06);
+  width: 48%;
+}
+
+.clientname {
+  margin-right: 13px;
+}
+
+.cli {
+  line-height: 0;
+}
+
+.cli .h4 {
+  font-weight: lighter;
+}
+
+.cli .p {
+  font-size: smaller;
+}
+
+.clientimg {
+  display: flex;
+}
+
+.firstpage {
+  display: flex;
+  margin-bottom: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.firstheader {
+  text-align: center;
+}
+
+.img1 {
+  border-radius: 30px;
+}
+
+.secondpage {
+  display: flex;
+  padding-left: 14%;
+  padding-right: 14%;
+  margin-bottom: 50px;
+  margin-right: 70px;
+  margin-right: 70px;
+}
+
+.blogtext {
+  display: flex;
+  padding-left: 15%;
+}
+
+.blogtext2 {
+  padding-left: 30%;
+}
+
+.secondimg {
+  border-radius: 15px;
+}
+
+.secondtext2 {
+  margin: 15px;
+}
+
+.lastpage {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.lastpageimg {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.lastimg {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-radius: 20px;
+}
+
+.imgalone {
+  margin-top: 5px;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.span {
+  color: #6705a2;
+}
+
+.span2 {
+  border: 1px solid #6705a2;
+  background-color: #6705a2;
+  color: white;
+  border-radius: 20px;
+  margin-top: 60px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: small;
+}
+
+.dot {
+  color: #f395d6;
+}
+
+.hr {
+  width: 300px;
+  height: 5px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right,
+    #6705a2 0 60px,
+    transparent 60px 80px,
+    white 80px 140px,
+    transparent 140px 160px,
+    white 160px 220px,
+    transparent 220px 240px,
+    white 240px 300px
+  );
+  margin-bottom: 80px;
+}
+
+.card {
+  position: relative;
+}
+
+.card .label {
+  position: absolute;
+  bottom: 10px;
+  left: 1px;
+  background: #6705a2;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.card2 {
+  position: relative;
+}
+
+.card2 .labels {
+  position: absolute;
+  bottom: 10px;
+  left: 1px;
+  background: #6705a2;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.card2 .cardimg {
+  position: absolute;
+  top: 25%;
+  left: 100px;
+  border-radius: 30px;
+  background-color: #f395d6;
+}
+
+.divider {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #6705a2;
+  color: #ffffff;
+  line-height: 0;
+}
+
+.secondpage .a {
+  font-size: small;
+}
+
+.secondpage .p {
+  font-size: small;
+}
+
+.h4 {
+  font-size: medium;
+  font-weight: lighter;
+}
+
+/* Instagram thumbnails spacing (last images) */
+.lastpageimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px; /* space between the three columns */
+  margin-bottom: 60px;
+}
+
+.imgsec {
+  /* two columns: each child div stacks its images vertically */
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+}
+.imgsec > div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lastimg {
+  margin: 0; /* remove tiny margins that collapse spacing */
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.imgalone {
+  margin: 0 6px; /* small horizontal breathing room */
+  width: 420px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+}
